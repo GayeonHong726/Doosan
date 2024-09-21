@@ -1,0 +1,1112 @@
+@charset "UTF-8";
+
+/* 기본 색상 */
+:root {
+    --main-color: #181927;
+    --text-color: #C7C6C6;
+    --foot-color: #222231;
+}
+
+* {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+.page {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+    
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .page{
+        border-top: 1px solid #a7a5a57c;
+    }
+}
+
+.page:first-child {
+    display: block;
+}
+    
+.clear {
+    clear: both;
+}
+
+/* 로그인 | 유료회원 */
+.login {
+    float: right;
+    margin: 20px 20px 0 0;
+    font-size: 17px;
+    font-weight: bolder;
+
+    position: relative;
+    z-index: 1;
+}
+
+.login a {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+    .login {
+        font-size: 20px;
+    }
+}
+
+/* 상단 로고 */
+.topLogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.topLogo img {
+    cursor: pointer;
+
+    position: relative;
+    height: 150px;
+    width: 150px;
+
+    z-index: 3;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .topLogo img {
+        position: relative;
+        height: 170px;
+        width: 170px;
+
+        margin-top: -50px;
+    }
+}
+
+/* 햄버거 */
+.hamb {
+    color: var(--text-color);
+    border: 0;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 25px;
+    top: 100px;
+}
+
+.hamb:hover {
+    opacity: 0.5;
+}
+
+/* 상단 메뉴바 */
+.m-con {
+    display: none;
+    border-bottom: 1px solid #a7a5a57c;
+}
+
+.m-con ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.m-con .M1 {
+    background-color: var(--main-color);
+    color: var(--text-color);
+
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.M1:hover {
+    color: white;
+}
+
+@media (min-width: 768px) { /* PC */
+    .m-con {    
+        position: relative;
+        display: block !important;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    .m-con p {
+        margin-top: -50px;
+
+        float: left;
+        padding: 10px 10px;
+        font-size: 28px;
+        width: 25%;
+    }
+
+    .m-con::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #ED1C24, #211f53);
+
+        z-index: 2;
+        margin-top: -60px;
+    }
+
+    .hamb {
+        display: none;
+    }
+}
+
+/* 서브메뉴 */
+.subnav1 {
+    display: none;
+    height: 60px;
+}
+
+.subnav1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subnav1 p {
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+
+    float: left;
+    width: 20%;
+
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .subnav1 {
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: var(--main-color);
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+        border-top: 1px solid white;
+    }
+
+    .subnav1 p {
+        font-size: 23px;
+    }
+}
+
+
+/* 메인페이지 : BEARS*/
+/* 컨텐츠A : 슬라이드 이미지 */
+.P1C1 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.mySlides img {
+    /* height: auto; */
+    max-width: 100%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+/* 방향키 */
+.P1C1 {
+    position: relative; /* 기준 */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 자신의 높이의 50%만큼 위 */
+
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev p, .next p {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--text-color);
+}
+
+/* 컨텐츠별 타이틀 */
+.P1C {
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    .P1C {
+        text-align: center;
+        margin-left: 0;
+        font-size: 50px;
+    }
+}
+
+/* 컨텐츠B : 구단소식 */
+.P1C2-list {
+    background-color: #222231;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.P1C2-list li{
+    margin-left: 30px;
+}
+
+.team-info {
+    text-align: left;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .team-info {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 28px;
+    }
+    .P1C2-list li{
+        margin-left: 60px;
+    }
+}
+
+/* 컨텐츠 C : 유튜브 */
+
+.P1C3 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 720px; 
+}
+.youtube-con {
+    position: relative;
+    text-align: center;
+}
+
+.youtube-img iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.youtube-img  {
+    display: none;
+}
+
+.youtube-img p {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.youtube-img .you {
+    font-size: 27px;
+    margin-top: 15px;
+}
+
+@media (min-width: 767px) {
+    .youtube-img iframe {
+        width: 600px;
+    }
+
+    .youtube-img p {
+        font-size: 30px;
+    }
+}
+
+.P1C3 .sm-con {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.P1C3 .smImg {
+    flex: 1; 
+}
+
+.P1C3 .smImg .thumb {
+    cursor: pointer;
+    opacity: 0.6;
+}
+  
+.P1C3 .smImg .thumb:hover {
+    opacity: 1;
+}
+
+.P1 .enter {
+    height: 100px;
+}
+
+/* 페이지 2 : PLAYER */
+.P2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 투수이미지 */
+.players {
+    position: relative;
+    padding: 0;
+}
+
+.players img {
+    background-color: #626266;
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.B .pName {
+    font-size: 20px;
+    color: white;
+}
+
+.B .pNum {
+    float: right;
+
+    font-size: 30px;
+    font-weight: lighter;
+    color: red;
+
+    margin-bottom: 30px;
+}
+
+@media (min-width: 767px) {
+    .B .pName {
+        font-size: 30px;
+    }
+
+    .B .pNum {
+        font-size: 40px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+
+/* 투수 소개 */
+.overlay {
+    position: absolute;
+    top : 0;
+    right: 0;
+    left: 0;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+
+    text-align: center;
+    font-size: 20px;
+}
+
+.players:hover .overlay {
+    opacity: 1;
+}
+
+@media (min-width: 600px) {
+    .overlay{
+        bottom: 35px;
+        font-size: 22px;
+    }
+}
+@media (min-width: 768px) {
+    .overlay{
+        bottom: 40px;
+        font-size: 30px;
+    }
+}
+
+/* PLAYER, STADIUM 버튼 */
+.playBtns {
+    border: 1px solid var(--main-color);
+    height: 300px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.staBtns {
+    position: relative;
+    height: 150px;
+    text-align: center;
+}
+
+.staBtns .button, .playBtns .button {
+    cursor: pointer;
+    background-color: #626266;
+    border: none;
+    border-radius: 16px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+
+    font-size: 30px;
+    height: 40px;
+
+    display: inline-block;
+    margin: 30px 20px auto;
+	margin: 130px 20px auto;
+}
+
+#jsBtn {
+    background-color: #d13844;
+    color: white;
+}
+.staBtns .button {
+	margin: 30px 20px auto;
+}
+
+.staBtns .button p,
+.playBtns .button p {
+    margin-top: -9px;
+}
+
+.playBtns .button:hover,
+.playBtns .button:focus {
+    background-color: #d13844;
+    color: white;
+}
+
+/* 페이지3 : STADIUM */
+/* 잠실야구장 & 베어스파크 */
+.jamsil {
+    display: block;
+}
+
+.bearsPark{
+    display: none;
+}
+
+.js-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jsInfo {
+    margin-top: 30px;
+}
+
+.jsInfo b {
+    color: white;
+}
+
+.js-con table {
+    background-color: var(--foot-color);
+    border-radius: 25px;
+
+    height: 200px;
+    width: 600px;
+}
+
+.jsInfo table td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+
+    font-size: 17px;
+
+    border: 1px solid var(--text-color);
+}
+
+.jsInfo table b {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.jsInfo table tr:first-child td {
+    border-top: none;
+}
+
+.jsInfo table tr:last-child td {
+    border-bottom: none;
+}
+
+.jsInfo table tr td:first-child {
+    border-left: none;
+}
+
+.jsInfo table tr td:last-child {
+    border-right: none;
+}
+
+.bp-con {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#bp1 {
+    font-size: 50px;
+}
+
+#bp2 {
+    font-size: 30px;
+}
+
+#bp3 {
+    font-size: 20px;
+}
+
+#bp4 {
+    font-size: 30px;
+    color: orange;
+}
+
+/* 버스정보 */
+.btn-con, .bpbtn-con {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown .tt {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.dropbtn {
+    background-color: var(--foot-color);
+    color: var(--text-color);
+    width: 80%;
+    height: 50px;
+    text-align: center;
+
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.dropbtn p {
+    margin-left: 20px;
+}
+
+.dropbtn p::after{
+    content: '\25BC';
+    color: var(--text-color);
+    margin-right: 6px;
+    float: right;
+}
+
+.J1.active p::after,
+.J2.active p::after,
+.B1.active p::after,
+.B2.active p::after {
+    content: '\25B2';
+}
+
+.inner {
+    display: none;
+
+    border-top: 1px solid var(--text-color);
+    background-color: var(--foot-color);
+    width: 80%;
+    margin: 0 auto;
+
+    font-size: 25px;
+    color: var(--text-color);
+
+    padding-left: 30px;
+}
+
+.inner span  {
+    color: orange;
+}
+
+.inner p {
+    margin-left: 10px;
+}
+
+/* Google Map */
+#mapBox {
+    margin-top: 80px;
+}
+
+#mapBox p {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#jsMap, #eMap {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    .jamsil, .bearsPark {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .js-con {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .js-con table {
+        width: 800px;
+    }
+
+    .jsImg img {
+        margin-right: 30px;
+        width: 500px;
+    }
+    
+    .jsInfo {
+        margin-top: 0;
+    }
+
+    
+    .jsInfo table td {
+        font-size: 18px;
+    }
+
+    #jsMap, #eMap {
+        width: 70%;
+    }
+}
+
+/* SHOP */
+.enter {
+    height: 100px;
+}
+
+#shop{
+    font-size: 40px;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.inpark {
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .shop-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .shop-con {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 50px;
+    }
+
+    .wefan, .inpark {
+        margin: 0 10px;
+    }
+}
+
+/* 페이지5 */
+.P5C{
+    font-size: 40px;
+    text-align: center;
+}
+
+.mas-con {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: var(--foot-color);
+}
+
+.mas-cc {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mas-cc p {
+    font-size: 30px;
+}
+
+#em {
+    background-color: white;
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#em img {
+    height: 190px;
+    width: 220px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .mas-con {
+        width: 80%;
+    }
+
+    .mas-cc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mas-cc p {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #em {
+        height: 192px;
+        width: 400px;
+    }
+
+    .mas1, .mas3, .mas5 {
+        float: left;
+        margin-right: 70px;
+    }
+}
+
+/* 푸터 */
+footer {
+    background-color: var(--foot-color);
+    color: var(--text-color);
+    height: 250px;
+}
+
+
+
+.foo-con {
+    border: 1px solid var(--foot-color);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.FC1 {
+    margin-top: 30px;
+}
+
+.FC1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.FC1 ul li {
+    display: inline;
+}
+
+.FC1 ul li:not(:last-child)::after {
+    content: ' | ';
+}
+
+.FC1 ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.FC2 a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 10px;
+    padding: 0;
+
+    /* 아이콘을 둥근 테두리 감싸기 */
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+
+    margin-right: 8px;
+    margin-top: 15px;
+}
+
+.FC3 {
+    display: none;
+    /* float: right;
+    margin: 20px 15px auto; */
+}
+
+.FC4 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+    .foo-con {
+        width: 70%;
+    }
+
+    .FC1 {
+        float: left;
+    }
+
+    .FC1 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .FC1 ul li a{
+        font-size: 20px;
+    }
+
+    .FC2 a {
+        float: right;
+        font-size: 16px;
+        margin-top: 30px;
+    } 
+
+    .FC3 {
+        display: block;
+        float: right;
+        margin: 80px 15px auto;
+    }
+    .FC4 {
+        float: left;
+        font-size: 20px;
+    }
+
+}
+
+/* 로그인 팝업 */
+.close-img {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.close-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.login-con {
+    padding: 16px;
+    font-size: 23px;
+}
+
+.login-con label, .signUp-con label {
+    color: var(--text-color);
+}
+
+.login-con input, .signUp-con input {
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* 로그인 버튼 */
+.login-con #logBtn {
+    border-radius: 4px;
+    background-color: var(--text-color);
+    border: none;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-con #logBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.login-con #logBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+
+.login-con #logBtn:hover {
+    background-color: #d13844;
+    color: white;
+}
+.login-con #logBtn:hover span {
+    padding-right: 25px;
+}
+
+.login-con #logBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#find {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.logBox {
+    /* border: 1px solid chartreuse; */
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.logBox-form {
+    background-color: var(--main-color);
+    margin: 5% auto 15% auto; /* 팝업 뜨는 위치*/
+    border: 1px solid var(--text-color);
+    max-width: 500px;
+}
+
+.logBox-form .login-con{ /* 폼 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign {
+    cursor: pointer;
+}
+
+/* 닫기 버튼 */
+.log-close, .su-close {
+    position: absolute;
+    right: 25px;
+    top: -30px;
+    color: var(--text-color);
+    font-size: 80px;
+}
+  
+.log-close:hover,
+.su-close:hover {
+    color: #ED1C24;
+    cursor: pointer;
+}
+
+/* 회원가입 폼 */
+.signUp {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.signUp-con {
+    padding: 16px;
+    font-size: 25px;
+}
+
+.signUp-con table{
+    width: 90%;
+    height: 350px;
+    text-align: center;
+}
+
+.signUp-form {
+    background-color: var(--main-color);
+    margin: 5% auto 15% auto; /* 팝업 뜨는 위치*/
+    border: 1px solid var(--text-color);
+    max-width: 600px;
+    height: 600px;
+}
+
+.signUp-form .signUp-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelbtn, .signupbtn {
+    border-radius: 4px;
+    background-color: var(--text-color);
+    border: none;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+
+    width: 80%;
+    height: 30px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelbtn:hover,
+.signupbtn:hover {
+    background-color: #d13844;
+    color: white;
+}

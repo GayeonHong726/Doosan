@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOOSAN</title>
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/bb1a9c504d.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet"> <!-- 폰트 -->
+</head>
+<style></style>
+
+<body>
+
+    <!-- 메인 페이지 -->
+        <!-- 헤더 -->
+        <header>
+            <!-- 로그인 | 유료회원 -->
+            <div class="login">
+                <a href="#" id="log">로그인</a> | 
+                <a href="#" id="sg">회원가입</a> |
+                <a href="#" style="color : orange;">유료회원</a>
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- 상단로고 -->
+            <div class="topLogo">
+                <img src="https://blog.kakaocdn.net/dn/bljax5/btrziguw8TT/iuOCMGZIC7yfQqkxW0qpYk/img.png" alt="두산베어스">
+            </div>
+            
+            <!-- 햄버거아이콘 -->
+            <div class="hamb-con">
+                <button type="button" class="hamb">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <div class="clear"></div>
+            
+            <!-- 메인메뉴 -->
+            <nav class="m-con">
+                <ul>
+                    <li><p class="M1 bears" data-index="0">BEARS</p></li>
+                    <li><p class="M1 players" data-index="1">PLAYER</p></li>
+                    <li><p class="M1 stadium" data-index="2">STADIUM</p></li>
+                    <li><p class="M1 shop" data-index="3">SHOP</p></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- PAGE : BEARS -->
+        <div class="page" data-index="0">
+            <!-- 서브메뉴 -->
+            <nav class="subnav1">
+                <ul>
+                    <li><p class="M1 brand" data-index="4">베어스 마스코트</p></li>
+                    <li><p>베어스 스토리</p></li>
+                    <li><p>사회공헌</p></li>
+                    <li><p>스폰/제휴사 소개</p></li>
+                    <li><p>전자공고</p></li>
+                </ul>
+            </nav>
+
+
+            <!-- 내부컨텐츠 -->
+            <div class="P1">
+                <!-- 컨텐츠A : 큰 이미지 슬라이드 -->
+                <div class="P1C1">
+                    <div class="mySlides">
+                        <img src="https://d3uesnxiude69b.cloudfront.net/mbanr/2024/cf3f020797207c8a5d3eaac1ea802fbb.jpg" alt="두잇포유">
+                    </div>
+                
+                    <div class="mySlides">
+                        <img src="https://d3uesnxiude69b.cloudfront.net/mbanr/2024/c7975446-a6bf-48c3-9172-cde92ac520ce.jpg" alt="두린이날">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="https://d3uesnxiude69b.cloudfront.net/mbanr/2024/bce94453-1a86-4300-b941-e6a46752259d.jpg" alt="두타할인">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="https://d3uesnxiude69b.cloudfront.net/mbanr/2024/01c1dd55-c2f7-40f0-a9bc-9c492398a07b.jpg" alt="두산앱출시">
+                    </div>
+
+                    <a class="prev"><p>&#10094;</p></a>
+                    <a class="next"><p>&#10095;</p></a>
+                </div>
+
+                <!-- 컨텐츠B : 구단소식 -->
+                <div class="P1C2">
+                    <div class="team-info">
+                        <p class="P1C">구단소식</p>
+                        <ul class="P1C2-list">
+                            <li>
+                                <p>두산베어스, '휠라(FILA)' 브랜드데이 진행</p>
+                                <p>2024-05-16</p>
+                            </li>
+                            <li>
+                                <p>두산베어스, 17일 승리기원 시구∙시타 진행</p>
+                                <p>2024-05-16</p>
+                            </li>
+                            <li>
+                                <p>두산베어스, 선수단에 최고급 태블릿PC 지급</p>
+                                <p>2024-05-13</p>
+                            </li>
+                            <li>
+                                <p>두산베어스, 팬 소원 성취 프로젝트 5호 주인공 공개</p>
+                                <p>2024-05-10</p>
+                            </li>
+                            <li>
+                                <p>두산베어스, ‘렛-두로 씨리즈’ 이벤트 진행</p>
+                                <p>2024-05-09</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 컨텐츠C : 유튜브 -->   
+
+                <!-- API 안될시 -->
+                <!-- <div class="P1C3">
+                    <p class="P1C">BEARS TV</p>
+
+                    <div class="youtube-con">
+                        <div class="youtube-img">
+                            <iframe src="https://www.youtube.com/embed/3kPu2YjrqNI?si=vdu_jUgg35ONn_rq" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div><p>'진격의 팀 두산' 9연승과 함께 3위로 점-프</p></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe src="https://www.youtube.com/embed/7GQY8y7ErHk?si=VvVKwkxSK6IhGBNF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div><p>거포 곰 군단 경기 연속 두 자릿수 안타 그리고 #9연승 !!?!!</p></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe src="https://www.youtube.com/embed/zfubSV81L3k?si=kDCO1enR6EKm3q-t" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div><p>이 기운 광주까지!!! 많은 응원 부탁드립니다 지는 법을 잊어버린 #8연승</p></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe src="https://www.youtube.com/embed/j7UXw9wruq4?si=Qxg9Fo8-NLBrF-2N" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div><p>'7연승 견인' 사랑가득 밥심으로 쟁취한 #최준호 데뷔 첫승</p></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe src="https://www.youtube.com/embed/bLe5W-VgmGg?si=XcEg7asB8aIK9eiy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div><p>웬만해선 그들을 막을 수 없다 8연승승승승승승승승</p></div>
+                        </div>
+                    </div>
+    
+                    <div class="sm-con">
+                        <div class="smImg">
+                            <img class="thumb" src="https://i.ytimg.com/vi/3kPu2YjrqNI/hqdefault.jpg" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" src="https://i.ytimg.com/vi/7GQY8y7ErHk/hqdefault.jpg" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" src="https://i.ytimg.com/vi/zfubSV81L3k/hqdefault.jpg" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" src="https://i.ytimg.com/vi/j7UXw9wruq4/hqdefault.jpg" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" src="https://i.ytimg.com/vi/bLe5W-VgmGg/hqdefault.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div> -->
+ 
+                <!-- 유튜브API -->
+                <div class="P1C3">
+                    <p class="P1C">BEARS TV</p>
+
+                    <div class="youtube-con">
+                        <div class="youtube-img">
+                            <iframe id="D0" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class='you' id="V0"></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe id="D1" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class='you' id="V1"></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe id="D2" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class='you' id="V2"></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe id="D3" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class='you' id="V3"></div>
+                        </div>
+                        <div class="youtube-img">
+                            <iframe id="D4" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class='you' id="V4"></div>
+                        </div>
+                    </div>
+    
+                    <div class="sm-con">
+                        <div class="smImg">
+                            <img class="thumb" id="P0" src="" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" id="P1" src="" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" id="P2" src="" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" id="P3" src="" style="width:100%">
+                        </div>
+                        <div class="smImg">
+                            <img class="thumb" id="P4" src="" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="enter"></div>
+            </div>
+        </div>
+
+        <!-- PAGE : PLAYER -->
+        <div class="page" data-index="1">
+            <div class="P2">
+                <div class="playBtns">
+                    <button class="button" id="thBtn"><p>투수</p></button>
+                    <button class="button" id="hitBtn"><p>타자</p></button>
+                    <button class="button" id="catBtn"><p>포수</p></button>
+                </div>
+
+                <!-- 투수 프로필 -->
+                <div class="throws B row">
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/NNKm" alt="최지강">
+                        <div class="overlay">
+                            <div>
+                                최지강<br>
+                                투수 <br>
+                                생년월일 | 2001-07-23<br>
+                                투타 | 우투좌타<br>
+                                신장/체중 | 180cm 88kg<br>
+                                입단연도 | 2022
+                            </div>
+                        </div>
+                        <span class="pName">최지강</span>
+                        <span class="pNum">42</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/wlHQ" alt="김택연">
+                        <div class="overlay">
+                            김택연<br>
+                            투수 <br>
+                            생년월일 | 2005-06-03<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 181cm 88kg<br>
+                            입단연도 | 2024
+                        </div>
+                        <span class="pName">김택연</span>
+                        <span class="pNum">63</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/2zY3" alt="곽빈">
+                        <div class="overlay">
+                            곽빈 <br>
+                            투수 <br>
+                            생년월일 | 1999-05-28 <br>
+                            투타 | 우투우타 <br>
+                            신장/체중 | 187cm 95kg <br>
+                            입단연도 | 2018
+                        </div>
+                        <span class="pName">곽빈</span>
+                        <span class="pNum">47</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/zIoW" alt="김명신">
+                        <div class="overlay">
+                            김명신<br>
+                            투수 <br>
+                            생년월일 | 1993-11-29<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 178cm 90kg<br>
+                            입단연도 | 2017<br>
+                        </div>
+                        <span class="pName">김명신</span>
+                        <span class="pNum">46</span>
+                    </div>
+
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/v9zy" alt="홍건희">
+                        <div class="overlay">
+                            <div>
+                                홍건희 <br>
+                                투수<br>
+                                생년월일 | 1992-09-29<br>
+                                투타 | 우투우타<br>
+                                신장/체중 | 187cm 97kg<br>
+                                입단연도 | 2020
+                            </div>
+                        </div>
+                        <span class="pName">홍건희</span>
+                        <span class="pNum">17</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/0cKE" alt="이영하">
+                        <div class="overlay">
+                            이영하 <br>
+                            투수 <br>
+                            생년월일 | 1997-11-01 <br>
+                            투타 | 우투우타 <br>
+                            신장/체중 | 192cm 91kg <br>
+                            입단연도 | 2016
+                        </div>
+                        <span class="pName">이영하</span>
+                        <span class="pNum">50</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/8aOY" alt="브랜든">
+                        <div class="overlay">
+                            브랜든<br>
+                            투수 <br>
+                            생년월일 | 1994-06-03 <br>
+                            투타 | 좌투좌타<br>
+                            신장/체중 | 190cm 81kg<br>
+                            입단연도 | 2022
+                        </div>
+                        <span class="pName">브랜든</span>
+                        <span class="pNum">48</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/wRrP" alt="알칸타라">
+                        <div class="overlay">
+                            알칸타라 <br>
+                            투수 <br>
+                            생년월일 | 1992-12-04<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 193cm 100kg<br>
+                            입단연도 | 2020
+                        </div>
+                        <span class="pName">알칸타라</span>
+                        <span class="pNum">43</span>
+                    </div>
+                </div>
+
+                <!-- 타자 -->
+                <div class="hitter B row">
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/k48U" alt="허경민">
+                        <div class="overlay">
+                            
+                            허경민 <br>
+                            내야수 <br>
+                            생년월일 | 1990-08-26 <br>
+                            투타 | 우투우타 <br>
+                            신장/체중 | 176cm 69kg <br>
+                            입단연도 | 2009
+                        </div>
+                        <span class="pName">허경민</span>
+                        <span class="pNum">13</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/5vsO" alt="정수빈">
+                        <div class="overlay">
+                            
+                            정수빈 <br>
+                            외야수 <br>
+                            생년월일 | 1990-10-07 <br>
+                            투타 | 좌투좌타 <br>
+                            신장/체중 | 181cm 88kg <br>
+                            입단연도 | 2009
+                        </div>
+                        <span class="pName">정수빈</span>
+                        <span class="pNum">31</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/igN8" alt="강승호">
+                        <div class="overlay">
+                            
+                            강승호 <br>
+                            내야수<br>
+                            생년월일 | 1994-02-09<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 178cm 88kg<br>
+                            입단연도 | 2021
+                        </div>
+                        <span class="pName">강승호</span>
+                        <span class="pNum">23</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/h0bS" alt="박준영">
+                        <div class="overlay">
+                            
+                            박준영 <br>
+                            내야수<br>
+                            생년월일 | 1997-08-05<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 180cm 90kg<br>
+                            입단연도 | 2023
+                        </div>
+                        <span class="pName">박준영</span>
+                        <span class="pNum">9</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/LDVF" alt="양석환">
+                        <div class="overlay">
+                            양석환 <br>
+                            내야수<br>
+                            생년월일 | 1991-07-15<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 185cm 90kg<br>
+                            입단연도 | 2021
+                        </div>
+                        <span class="pName">양석환</span>
+                        <span class="pNum">53</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/ZgLq" alt="라모스">
+                        <div class="overlay">
+                            
+                            라모스 <br>
+                            외야수<br>
+                            생년월일 | 1992-04-15<br>
+                            투타 | 우투양타<br>
+                            신장/체중 | 183cm 97kg<br>
+                            입단연도 | 2024
+                        </div>
+                        <span class="pName">라모스</span>
+                        <span class="pNum">4</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/rNTQ" alt="김재호">
+                        <div class="overlay">
+                            
+                            김재호<br>
+                            내야수<br> 
+                            생년월일 | 1985-03-21<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 181cm 76kg<br>
+                            입단연도 | 2004
+                        </div>
+                        <span class="pName">김재호</span>
+                        <span class="pNum">52</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/GlG9" alt="김재환">
+                        <div class="overlay">
+                            
+                            김재환<br>
+                            외야수<br>
+                            생년월일 | 1988-09-22<br>
+                            투타 | 우투좌타<br>
+                            신장/체중 | 183cm 90kg <br>
+                            입사연도 | 2008
+                        </div>
+                        <span class="pName">김재환</span>
+                        <span class="pNum">32</span>
+                    </div>
+                </div>
+
+                <!-- 포수 -->
+                <div class="catcher B row">
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/0bNe" alt="양의지">
+                        <div class="overlay">
+                            
+                            양의지 <br>
+                            포수<br>
+                            생년월일 | 1987-06-05<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 180cm 95kg<br>
+                            입단연도 | 2006
+                        </div>
+                        <span class="pName">양의지</span>
+                        <span class="pNum">25</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/C0Mq" alt="김기연">
+                        <div class="overlay">
+                            
+                            김기연 <br>
+                            포수<br>
+                            생년월일 | 1997-09-07<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 178cm 95kg<br>
+                            입단연도 | 2023
+                        </div>
+                        <span class="pName">김기연</span>
+                        <span class="pNum">45</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/mEpR" alt="안승한">
+                        <div class="overlay">
+                            
+                            안승한 <br>
+                            포수<br>
+                            생년월일 | 1992-01-25<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 176cm 98kg<br>
+                            입단연도 | 2022
+                        </div>
+                        <span class="pName">안승한</span>
+                        <span class="pNum">20</span>
+                    </div>
+                    <div class="players col-lg-3 col-sm-4 col-6">
+                        <img src="https://zrr.kr/9euV" alt="장승현">
+                        <div class="overlay">
+                            
+                            장승현 <br>
+                            포수<br>
+                            생년월일 | 1994-03-07<br>
+                            투타 | 우투우타<br>
+                            신장/체중 | 184cm 86kg<br>
+                            입단연도 | 2013
+                        </div>
+                        <span class="pName">장승현</span>
+                        <span class="pNum">22</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE : STADIUM -->
+        <div class="page" data-index="2">
+            <div class="P3">
+                <div class="staBtns">
+                    <button class="button" id="jsBtn"><p>잠실야구장</p></button>
+                    <button class="button" id="bearsBtn"><p>베어스파크</p></button>
+                </div>
+
+                <!-- 경기장 위치 -->
+                <!-- 잠실야구장 -->
+                <div class="jamsil">
+                        <div class="js-con">
+                            <div class="jsImg">
+                                <img src="./img/jsSta.png" alt="잠실야구장">
+                            </div>
+                            <div class="jsInfo">
+                                <div class="jsInfo-con">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <b>1.전광판</b> <br>
+                                                    경기기록용 3색 전광판 <br>
+                                                    (14,080mm X 7.040mm) <br>
+                                                    영상표출용 풀컬러 비디오 전광판 <br>
+                                                    (14,784mm X 9.856mm) <br>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <b> 3. 출입문 10개 </b><br>
+                                                    1층 : 7개 / 2층 : 3개
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <b> 5.조명탑 </b><br>
+                                                    외야 전광판 좌우측 1개씩 <br>
+                                                    좌우 파울선상 1개씩 <br>
+                                                    본부상단 2개
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <b> 2. 잔디가 없는 부분 </b><br>
+                                                    투수마운드 : 직경 8m 60cm <br>
+                                                    웨이팅서클 : 직경 6m 50cm <br>
+                                                    1.3루 파울선 : 폭 1m 40cm <br>
+                                                    코치박스 : 길이 6m X 폭 3m <br>
+                                                    내야 : 14m 80xm <br>
+                                                    (유격수, 2루수 지역) <br>
+                                                    12m 80cm (2루 베이스 뒤)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <b> 4.펜스거리 및 높이 </b><br>
+                                                    좌측펜스 : 100m <br>
+                                                    우측펜스 : 100m <br>
+                                                    중앙펜스 : 125m <br>
+                                                    외야펜스 총 높이 : 2m 60cm <br>
+                                                    내야그물망 높이 : 3m
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <b> 6.좌석수 </b><br>
+                                                    25,000석 <br>
+                                                    VIP석 : 264석 <br>
+                                                    테이블석 : 502석 <br>
+                                                    블루석 : 2,373석 <br>
+                                                    레드석 : 6,399석 <br>
+                                                    네이비석 : 10,112석 <br>
+                                                    외야석 : 5,813석
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="dropdown">
+                            <p class="tt">상세안내</p>
+                            <div class="btn-con">
+                                <button class="dropbtn J1"><p>주소</p></button>
+                            </div>
+                            <div class="inner Add1">
+                                <span>주소</span> <br>
+                                <p>서울특별시 송파구 올림픽로 25</p>
+                            </div>
+                            <div class="btn-con">
+                                <button class="dropbtn J2"><p>교통안내</p></button>
+                            </div>
+                            <div class="inner bus-con">
+                                <span>파랑버스(간선)</span>
+                                <p>301, 333, 341, 345, 342, 350, 360 </p>
+
+                                <span>초록버스(지선)</span>
+                                <p>2415, 3217, 3314(잠실역 방향), 3322, 3411, 3412, 3414, 3417, 3422, 4319  </p>
+
+                                <span>초록버스(경기 일반)</span>
+                                <p>917, 11-3</p>
+
+                                <span>빨간버스(경기 직행)</span>
+                                <p>1100, 1700, 2000, 6900, 7007, 8001, 9303 </p>
+
+                                <span>공항버스</span>
+                                <p>6006 </p>
+
+                                <span>지하철</span>
+                                <p>2호선, 9호선 종합운동장역 5,6번 출구  </p>
+                            </div>
+                        </div>
+
+                        <div id="mapBox">
+                            <p>잠실야구장 찾아오시는 길</p>
+                            <div id="jsMap"></div>
+                        </div>  
+
+                        <div class="enter"></div>
+                </div>
+
+                <!-- 베어스파크 -->
+                <div class="bearsPark">
+                    <div class="bp-con">
+                        <p id="bp1">
+                            두산프로야구단 2군 전용구장 베어스파크
+                        </p>
+                        <p id="bp2">
+                            2014년 7월! 기존의 이천 베어스 필드를 확장 및 선진화하여, <br>
+                            보다 체계적인 유망주 육성을 위해 탄생한 국내 최고의 야구 타운
+                        </p>
+                        <p id="bp3">
+                            24,159평의 넓은 대지 위에 위치한 베어스 파크는 유망주 및 신진 급선수들의 체계적인 <br>
+                            육성을 위해 건립되었으며, 자연 친화적 환경에 선수들이 편안히 훈련할 수 있도록 최신 시설을 <br>
+                            구비한 것이 특징이다. <br><br>
+                        </p>
+                        <p id="bp4">
+                            실전과 같은 훈련을 가능케 한 베어스 파크
+                        </p>
+                    </div>
+
+                    <div class="dropdown">
+                        <p class="tt">상세안내</p>
+                        <div class="btn-con">
+                            <button class="dropbtn B1"><p>주소</p></button>
+                        </div>
+                        <div class="inner Add2">
+                            <span>주소</span> <br>
+                            <p>경기도 이천시 백사면 원적로 668</p>
+
+                        </div>
+                        <div class="bpbtn-con">
+                            <button class="dropbtn B2"><p>교통안내</p></button>
+                        </div>
+                        <div class="inner bpbus-con">
+                            1. 지하철 이용 <br>
+                            <span> 신도둔예촌역(경강선) </span> -> <span>버스 24-4번</span> <br>
+                            하차 정류장 : <span>경사1리</span> <br>
+                            2. 고속버스 이용 <br>
+                            <span>이천종합터미널</span> -> <span>버스 21-3</span> <br>
+                            하차 정류장 : <span>경사1리</span>
+                        </div>
+                    </div>
+
+                    <div id="mapBox">
+                        <p>베어스파크 찾아오시는 길</p>
+                        <div id="eMap"></div>
+                    </div>  
+
+                    <div class="enter"></div>
+                </div>
+            </div>
+        </div>
+            
+        <!-- PAGE : SHOP -->
+        <div class="page" data-index="3">
+            <div class="enter"></div>
+            <p id="shop">SHOP</p>
+
+            <div class="shop-con">
+                <a href="https://www.doosanbearswefan.shop/shop/main/index.php">
+                    <div class="wefan">
+                        <img src="./img/wefan.png" alt="두산베어스 위팬">
+                    </div>
+                </a>
+
+                <a href="https://ticket.interpark.com/contents/Promotion/Event/MDShopList?dispNo=001780002008">
+                    <div class="inpark">
+                        <img src="./img/inpark.png" alt="두산 인터파크샵">
+                    </div>
+                </a>
+            </div>
+            <div class="enter"></div>
+        </div>
+
+        <!-- PAGE : ABOUT BEARS -->
+        <div class="page aboutBB" data-index="4">
+            <p class="P5C">마스코트 (Mascot)</p>
+            <div class="mas-con">
+                <div class="enter"></div>
+
+                <div class="mas-cc">
+                    <div class="mas1">
+                        <p>마스코트 엠블럼</p>
+                        <div id="em">
+                            <img src="https://i.namu.wiki/i/4-scjVd8VO-yXVCn0ySiCHrnNeceHcjq8C_TahjWJLy8LHrD9s_pr6szSHwc201eS20CaEsdh_j5UjOxe3NTDg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="mas2">
+                        <p>기본형 (홈/어웨이)</p>
+                        <div id="em">
+                            <img src="https://www.doosanbears.com/_next/image?url=%2Fimages%2Fimg_mascot2.png&w=640&q=75" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="mas-cc">
+                    <div class="mas3">
+                        <p>응용형 타격 (홈/어웨이)</p>
+                        <div id="em">
+                            <img src="https://www.doosanbears.com/_next/image?url=%2Fimages%2Fimg_mascot3.png&w=640&q=75" alt="">
+                        </div>
+                    </div>
+                    <div class="mas4">
+                        <p>응용형 투수 (홈/어웨이)</p>
+                        <div id="em">
+                            <img src="https://www.doosanbears.com/_next/image?url=%2Fimages%2Fimg_mascot4.png&w=640&q=75" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="mas-cc">
+                    <div class="mas5">
+                        <p>응용형 도루 (홈/어웨이)</p>
+                        <div id="em">
+                            <img src="https://www.doosanbears.com/_next/image?url=%2Fimages%2Fimg_mascot5.png&w=640&q=75" alt="">
+                        </div>
+                    </div>
+                    <div class="mas6">
+                        <p>응용형 필드 (홈/어웨이)</p>
+                        <div id="em">
+                            <img src="https://www.doosanbears.com/_next/image?url=%2Fimages%2Fimg_mascot6.png&w=640&q=75" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enter"></div>
+            </div>
+            <div class="enter"></div>
+        </div>
+
+        <!-- 로그인 폼 -->
+        <div class="logBox">
+            <form method="post" class="logBox-form">
+                <div class="close-img loclose-con">
+                    <span class="log-close">&times;</span>
+                    <img src="https://blog.kakaocdn.net/dn/bljax5/btrziguw8TT/iuOCMGZIC7yfQqkxW0qpYk/img.png">
+                </div>
+
+                <div class="login-con">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="uname"><b>E-mail</b></label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="이메일을 입력해 주세요." id="uname" name="login" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="psw"><b>Password</b></label>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="비밀번호를 입력해 주세요" id="psw" name="pw" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> <button type="submit" id="logBtn"><span>로그인</span></button> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="find"> <span id="sign">회원가입</span> | 아이디 찾기 | 비밀번호 찾기 </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+
+        <!-- 회원가입 폼 -->
+        <div class="signUp">
+            <form class="signUp-form" method="get" name="form">
+                <div class="close-img suclose-con">
+                    <span class="su-close">&times;</span>
+                    <img src="https://blog.kakaocdn.net/dn/bljax5/btrziguw8TT/iuOCMGZIC7yfQqkxW0qpYk/img.png">
+                </div>
+
+                <div class="signUp-con">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="uemail"><b>e-mail</b></label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="email을 입력해 주세요." id="uemail" name="email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sgpsw"><b>Password</b></label>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="비밀번호를 입력해 주세요" id="sgpsw" name="pw" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="repsw"><b>Repeat Password</b></label>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="비밀번호를 다시 입력해 주세요" id="repsw" name="repw" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>  <button type="button" class="cancelbtn">취소</button> </td>
+                            <td> <button type="submit" class="signupbtn">회원가입</button> </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </form>
+
+        </div>
+        
+        <!-- 푸터 -->
+        <footer>
+            <div class="foo-con">
+                <div class="FC1">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">이메일주소 무단 수집거부</a></li>
+                        <li><a href="#">정도경영 사이버 신문고</a></li>
+                        <li><a href="#">영상정보처리기기 운영/관리 방침</a></li>
+                    </ul>
+                </div>
+                <div class="FC2">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            
+                <div class="clear"></div>
+
+                <div class="FC3">
+                    <img src="https://www.doosanbears.com/_next/image?url=%2Fimages%2Flogo_nice.png&w=64&q=75" alt="">
+                </div>
+
+                <div class="FC4">
+                    <div><b>02.2240.1777</b></div>
+                    <div>
+                        대표이사 : 고영섭 서울특별시 송파구 올림픽로 25 잠실야구장내 두산베어스<br>
+                        사업자등록번호 : 107-81-13241 통신판매허가번호 : 서울시 송파구청 제 1775호
+                    </div>
+                    <div>Copyrightⓒ 2019 Doosan Bears Inc. All Rights Reserved</div>
+                </div>
+            </div>
+        </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="./index.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdqMj_K2FN_GGxT2oxXkKicKgoGUn-Xd4
+&callback=jsMap"></script>
+</body>
+
+</html>
