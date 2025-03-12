@@ -1,7 +1,7 @@
-# 개인프로젝트 - 두산베어스 홈페이지 클론
+# 개인프로젝트 - 두산베어스 홈페이지 마크업
 
 ### 프로젝트 개요
-- HTML, CSS, JavaScript 를 활용해 두산 홈페이지를 클론하고, YouTube API 와 Google Maps API 를 사용하여 동적인 기능을 추가한 웹사이트입니다.
+- HTML CSS JavaScript 를 활용해 두산 홈페이지를 마크업하고 YouTube API 와 Google Maps API 를 사용하여 동적인 기능을 추가한 웹사이트입니다.
 
 ### 팀원
 - 개인 프로젝트
